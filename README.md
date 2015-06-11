@@ -5,5 +5,5 @@ Ceci est un livre électronique pour aider les élèves de TS spécialité ISN �
 Ce livre a été écrit par
 * Franck Lagrave
 
-# pour la version originale sur gitub
+# pour la version originale sur github
 * Barbara Ericson
