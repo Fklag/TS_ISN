@@ -6,13 +6,13 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 	
-=======================================
-CS Principles: Big Ideas in Programming
-=======================================
+=====================================
+Informatique et Sciences du Numérique
+=====================================
 
 .. Here is were you specify the content and order of your new book.
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
+.. Each section heading (e.g. "SECTION 1: Introduction") will be
    a heading in the table of contents. Source files that should be
    generated and included in that section should be placed on individual
    lines, with one line separating the first source filename and the
@@ -21,14 +21,14 @@ CS Principles: Big Ideas in Programming
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
-SECTION 1: COMPUTER ABILITIES
-:::::::::::::::::::::::::::::::
+SECTION 1: Introduction
+::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 3
    
-Chapter 1: What is this Book About?
-::::::::::::::::::::::::::::::::::::::::
+Chapter 1: Un livre interactif en ligne
+:::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
