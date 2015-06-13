@@ -13,7 +13,7 @@
 
 .. 	qnum::
 	:start: 1
-	:prefix: csp-1-1-
+	:prefix: Q
 
 
 .. |runbutton| image:: Figures/run-button.png
@@ -32,30 +32,32 @@
     :alt: teacher note
 
 
-This Book is for Teachers
-==========================
+Un livre interactif pour apprendre
+----------------------------------
 
-This chapter introduces the approach used in this book and offers some quick "teasers" of things we'll be doing later.  **Don't worry if you don't understand all the code (programs - instructions that a computer can understand) that you see in this chapter**.  We'll go through things much more slowly in the next few chapters.  This book is intended for teachers who haven't programmed before.
+Ce chapitre présente l'approche utilisée dans ce livre numérique et offre quelques "teasers" rapides de ce que nous allons faire plus tard, ne vous inquiétez pas si vous ne comprenez pas tous les codes des programmes, il y aura plus de détails par la suite.
 
 ..	index::
 	single: Python
 	single: code
 	single: program
+	
+La plupart des cours d'informatique vous oblige à écrire beaucoup de code.
+Ce livre électronique est une introduction à la programmation, il est différent parce qu'il utilise des **exemples interactifs** pour vous apprendre le langage de programmation Python (utilisé par des entreprises comme Google et Pixar) sans vous faire écrire beaucoup de code.
 
-This electronic book is different because it uses *examples plus practice*.  Most computer science books are about becoming professional software developers (people who write programs for a living).  Most computer science courses require you to write lots of code.  This book helps teachers learn how to *teach programming* without making you write lots of code.  It will use the programming language **Python** which is used by companies like Google and Pixar.  
 
 .. figure:: Figures/HappyTeacherInComputerClass.jpg
     :width: 400px
     :align: center
-    :alt: a teacher in a computer classroom
+    :alt: La salle 403 du lycée Beaussier
     :figclass: align-center
 
-    Figure 1: A teacher in a computer classroom
+    Figure 1: La salle attribuée pour l'enseignement de l'ISN
 
-- Rather than have you write lots of code, we will ask you to *read* a lot of code *examples*, because that's what computer science teachers do most often.
-- We ask you to *use* what you are learning from the examples in some simple *practice* exercises.  These exercises are meant to be short and easy, to fit into a teacher's busy life.
-- As a teacher, you need to know what students most often *get wrong*, where you can find *resources* to help you teach, and *how* to teach different ideas.  The book is sprinkled with |teachernote| **Teacher Notes** that explain how to be an effective computer science teacher.
-- **You don't have to install anything**.  You will read, edit, and run programs all from within the pages of this ebook inside the browser.  
+Vous allez lire un grand nombre d'exemples de code, puis utiliser ce que vous apprenez dans certains exercices pratiques simples (courts et faciles pour entrer dans la vie bien remplie d'un élève).
 
-Click the double arrows to the right at the top of this page to go on to the next section in this chapter.  Click on the name of the book at the top left of the page to go to the table of contents.
+Il n'y a rien à installer, vous pourrez lire, modifier et exécuter tous les programmes à partir du navigateur internet.
+
+* Cliquez sur les doubles flèches à droite en haut de cette page pour passer à la section suivante.
+* Cliquez sur le nom du livre en haut à gauche de la page pour aller à la table des matières.
 
