@@ -13,7 +13,7 @@
 
 .. 	qnum::
 	:start: 1
-	:prefix: csp-1-2-
+	:prefix: Q
 
 
 .. |runbutton| image:: Figures/run-button.png
@@ -31,16 +31,16 @@
     :align: bottom
     :alt: teacher note
 
-Compute with Numbers
-=====================
+Programmer avec des nombres
+---------------------------
 
-We won't be using lots of math in this eBook, so don't worry if math isn't your favorite thing.  You will run and modify programs that work with words, turtles (virtual ones), and images as well as numbers.  The only math that you need to know is addition, subtraction, multiplication, and division. 
+Dans la suite, vous pourrez executer et modifier des programmes qui fonctionnent avec des mots, des tortues (virtuelles) et des images.
 
 ..	index::
 	single: variable
 	pair: programming; variable
-
-Computers were first used for calculations. You may be used to doing calculations with a calculator, but calculations are often easier if you can *name* the numbers you are working with.  When you name a number, or the result of a calculation, you are creating a **variable**.  A **variable** is a name associated with computer memory that can hold a value and that value can change or vary.  One example of a **variable** is the score in a game.  The score starts off at 0 and increases as you play the game.
+	
+Les ordinateurs ont été utilisés d'abord pour les calculs (comme une calculatrice), mais les enchaînements d'opérations sont souvent plus faciles si vous pouvez nommer les valeurs numériques avec lesquelles vous travaillez. Lorsque vous nommez un certain nombre, ou le résultat d'un calcul, vous créez une **variable**. Une variable est un nom associé à la mémoire de l'ordinateur qui peut contenir une valeur et cette valeur peut changer ou varier. Par exemple, le score dans un jeu est une variable : le score initialisé à :math:`0` augmente à mesure que vous jouez.
 
 .. figure:: Figures/pongScore.png
     :width: 400px
@@ -48,53 +48,54 @@ Computers were first used for calculations. You may be used to doing calculation
     :alt: A game in Scratch with a score
     :figclass: align-center
     
-    Figure 2: A pong game in `Scratch <http://scratch.mit.edu>`_ with a score shown in the upper left.
+    Figure 2: Un jeu de pong avec |scratch| et l'affichage du score en haut à gauche.
 
-One thing that you might want to calculate is a **Body Mass Index**.    `Body Mass Index (BMI) <http://www.nhlbi.nih.gov/guidelines/obesity/BMI/bmicalc.htm>`_ is a measure of body fat that is useful in screening for health issues.  Generally speaking:
+.. |scratch| raw:: html
 
-- A BMI of 18.5 or less is considered *underweight*.
-- A BMI between 18.5 to 24.9 is considered *healthy*.
-- A BMI between 25-29.9 is considered *overweight*.
-- A BMI of 30 or over is considered *obese*.
+   <a href="http://scratch.mit.edu" target="_blank">Scratch</a>
+       
+Dans un premier programme, voyons comment calculer l'indice de masse corporelle (IMC) c'est une mesure standard pour évaluer les risques liés au surpoids chez l'adulte.
 
-To calculate a BMI, you need the height in inches and the weight in pounds.  You square the height (multiply the height in inches by itself), then divide the weight in pounds by the squared-height.  BMI is defined in terms of meters and kilograms, so to convert from pounds and inches multiply by 703.
+* Un IMC de 18,5 ou moins est considéré comme **insuffisant**.
+* Un IMC entre 18,5 et 25 est considéré comme **normal**.
+* Un IMC entre 25 et 30 est considérée comme **surpoids**.
+* Un IMC de 30 ou plus est considéré comme **obèse**.
 
-In the box below is a computer program that calculates the BMI for someone 60 inches tall (5 feet) and 110 pounds.  
+Pour calculer l'IMC, on doit diviser le poids (en kilos) de l'individu par la taille (en mètres) au carré.
 
-Press the |runbutton| button below to make the computer execute these steps. The output from this program will be displayed to the right of the program.
+Dans l'encadré ci-dessous, un programme informatique calcule l'IMC pour quelqu'un de 1,70 m et 70 kg.
 
-Pres the |audiobutton| button below to bring up an "Audio Tour" that explains this program, line-by-line.
+Appuyez sur le bouton |runbutton| d'exécution ci-dessous pour faire exécuter par l'ordinateur ces étapes. La sortie de ce programme sera affichée dans la colonne de droite.
 
-You can only use the *Save* and *Load* buttons if you are logged in. The *Save* button will save the current program and the *Load* button will load a saved program.
+Pour utiliser les boutons *Save* et *Load*, il faut-être connecté. Le bouton *Save* enregistre le programme en cours et le bouton *Load* va charger un programme sauvegardé.
 
-.. activecode:: BMI
-    :tour_1: "Line-by-line Tour"; 1: BMI-line1; 2: BMI-line2; 3: BMI-line3; 4: BMI-line4; 5: BMI-line5; 6: BMI-line6; 7: BMI-line7; 
+.. activecode:: IMC
     :nocodelens:
     
-    height = 60    # in inches (60 inches is 5 feet)
-    weight = 110   # in pounds
-    heightSquared = height * height
-    BMI = weight / heightSquared
-    BMImetric = BMI * 703
-    print("BMI:")
-    print(BMImetric)
+    taille = 1.70    # en mètres
+    poids = 70   # en kilos
+    TailleCarre = taille * taille
+    IMC = poids / TailleCarre
+    print("IMC:")
+    print(IMC)
 
-Change the weight (in inches) and height (in pounds) in the program above, and press the *Run* button to calculate a new BMI.  
+
+Changer le poids (en kilos) et la taille (en mètres) dans le programme ci-dessus, et appuyez sur le bouton *Exécuter* pour calculer une nouvelle IMC. 
 
 .. Note
    Notice how naming the values (using variables) for height and weight makes it easier to figure out what values need to be changed.  
 
-.. mchoicemf:: 1_2_1_BMI_Q1
-   :answer_a: 21.9
-   :answer_b: 21.924704834
-   :answer_c: 21
-   :answer_d: 22
+.. mchoicemf:: 1_2_1_IMC_Q1
+   :answer_a: 18.9
+   :answer_b: 18.9919649379
+   :answer_c: 19
+   :answer_d: 19.0
    :correct: b
-   :feedback_a: Close, but the computer will give you more digits than that.
-   :feedback_b: Yes!
-   :feedback_c: No, the result will be a number with a decimal point and numbers after the decimal point.
-   :feedback_d: No, the computer does not round the result.
+   :feedback_a: C'est un résultat tronqué, l'ordinateur affichera plus de décimales.
+   :feedback_b: Oui !
+   :feedback_c: Non, le résultat est un nombre décimal avec une partie entière et une partie décimale.
+   :feedback_d: Non, le résultat affiché par l'ordi n'est pas arrondi.
    
-   Imagine that you are 5 foot 7 inches and weighed 140 pounds.  What is your BMI?
+   Imaginez que pour 1,85 m vous êtes à 65 kilos. Quel est votre IMC?
 
 
