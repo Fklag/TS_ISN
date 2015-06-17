@@ -32,8 +32,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'CS Principles: Big Ideas in Programming' # e.g. How To Think Like a Computer Scientist
-copyright = u'2014, Mark Guzdial, Barbara Ericson, and Briana Morrison' # e.g. "2013, Brad Miller and David Ranum"
+project = u'Informatique et Sciences du Numérique' # e.g. How To Think Like a Computer Scientist
+copyright = u'2015, F. Lagrave' # e.g. "2013, Brad Miller and David Ranum"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -51,10 +51,10 @@ html_theme = 'sphinx_bootstrap'
 # Theme options are theme-specific and customize the look and feel of a theme
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "CS Principles",
+    'navbar_title': "TS ISN",
 
     # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Chapters",
+    'navbar_site_name': "Chapitres",
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
@@ -90,7 +90,7 @@ html_theme_path = ["_templates"]
 html_title = 'CS Principles'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='CS Principles'
+html_short_title ='TS ISN'
 
 # Logo is currently included as CSS background in default layout file. If you remove
 # it there, you should specify an alternative image here.
